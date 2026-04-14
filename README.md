@@ -1,23 +1,17 @@
 # AI for Agriculture 
 
 ## Step1(Sara): Hyperspectral Preprocessing with PCA
-
 ### Reference Paper:
-- Hyperspectral Image Classification using Deep Learning
+- Hyperspectral Dimensionality Reduction Based on PCA  
+  https://www.mdpi.com/2072-4292/11/10/1219
 
-### What I did:
-- Loaded hyperspectral images (125 bands)
-- Reshaped data for PCA
-- Applied PCA to reduce dimensionality
-- Reduced bands from 125 → 2
-- Saved processed data
+### What I learned from the paper:
+- Hyperspectral images contain many spectral bands
+- High dimensionality makes processing difficult
+- PCA is used to reduce redundancy and keep important information
 
-### Outputs:
-- reduced_hs.npy
-- sample_rgb.npy
-- PCA visualization image
-
-### Why PCA?
-- Reduce complexity
-- Keep important spectral information
-- Improve model performance in next step
+### What I implemented:
+- Loaded hyperspectral data
+- Reshaped data
+- Applied PCA (125 → 2 components)
+- Visualized results
